@@ -16,6 +16,9 @@ $ export FLASK_RUN_PORT=8080
 $ flask run
 ```
 
+If you want to scrape a larger or smaller range of data, change the START_DATE and END_DATE values inside GoldScrape.py.
+The default is set to scrape from 1/1/2019 to 6/1/2019
+
 ### Prerequisites
 
 Below is a dump of pip freeze of the project
