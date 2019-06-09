@@ -1,4 +1,4 @@
-# Project Title
+# Investing.com Scraper
 
 A quick web parser for investing.com. We store the data for gold and silver in a sqlite database and then use flask in 
 order to grab the data from from the db.
