@@ -4,6 +4,9 @@ from bs4 import BeautifulSoup
 from datetime import datetime, timezone
 from db_table import db_table
 
+START_DATE = "01/01/2019"
+END_DATE = "06/01/2019"
+
 # ID used for the AJAX request to get the data
 commodityType = {
     "GOLD": 8830,
@@ -54,8 +57,8 @@ def get_silver_data(start_date, end_date):
 
 
 # Grab the Raw HTML from the site
-gold_data = BeautifulSoup(get_gold_data("01/01/2019", "06/01/2019"), 'html.parser')
-silver_data = BeautifulSoup(get_silver_data("01/01/2019", "06/01/2019"), 'html.parser')
+gold_data = BeautifulSoup(get_gold_data(START_DATE, END_DATE), 'html.parser')
+silver_data = BeautifulSoup(get_silver_data(START_DATE, END_DATE), 'html.parser')
 
 
 # Iniit the database connection
